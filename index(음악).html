@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Healimg Studio</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+</head>
+    <style>
+        body{background-color:powderblue}
+        h1, h2{text-align:center;}
+        h3{border-bottom:3PX grey SOLID;}
+        h1{border:5px solid gray;padding:33px;margin:80px;}
+        body{font-family: 'Nanum Brush Script', cursive;}
+    </style>
+    <body>
+    <h1><u>힐링</u> 스튜디오</h1>
+    <h2>음악을 들으며 잠시 힐링해보세요!</h2>
+    <input type="button" value="night" onclick="
+            if(this.value ==='night'){
+            document.querySelector('body').style.color = 'powderblue'; 
+            document.querySelector('body').style.backgroundColor = 'black' ;
+            this.value='day';
+            }
+            else{
+
+            document.querySelector('body').style.color = 'black'; 
+            document.querySelector('body').style.backgroundColor = 'powderblue';
+            this.value='night';
+            }">
+    <ol> 
+        <h2>힐링되는 노래들</h2>
+        <li><iframe width="560" height="315" src="https://www.youtube.com/embed/VlaGz-nZUT4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+        <li><iframe width="560" height="315" src="https://www.youtube.com/embed/pr__GAkZNEo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+        <li><iframe width="560" height="315" src="https://www.youtube.com/embed/XfhpQH7YC7Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+        <li><iframe width="560" height="315" src="https://www.youtube.com/embed/mXHN8Jb7KB8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+    </ol>
+    <h3>다른 영상 검색</h3>
+    <form action="https://www.youtube.com/results?">
+        <input name="q" type = "text">
+        <input type="submit" value="유튜브 검색">
+    </form>
+    
+    
+        <form action="https://search.naver.com/search.naver?">
+            <input name="query" type = "text">
+            <input type="submit" value="네이버 검색">
+
+        </form>
+    
+        
+   
+            
+            <form action="https://www.google.co.kr/search?">
+            <input name="query" type = "text">
+            <input type="submit" value="구글 검색">
+            </form>
+        
+    </ol>
+<body>
+</html>
